@@ -1,8 +1,9 @@
 source 'https://rubygems.org'
 
 
-#the solr client
-gem 'rsolr'
+
+gem 'rsolr' #the solr client
+gem "redis" #redis client
 
 
 # For sinatra
