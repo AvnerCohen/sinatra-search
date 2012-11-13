@@ -18,7 +18,7 @@ class BirdsSearchApp < Sinatra::Base
  redis = Redis.new
 
  get "/search/:search" do |search|
-  page=params["page"].to_s
+  page=params["page"]
 
   redis_response  = redis.get("#{page}:#{search}")
 
